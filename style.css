@@ -20,4 +20,6 @@ html,body{
     background-color: hsla(113, 100%, 50%, 0.514);
     height: 80%;
     width: 40%;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px;
 }
