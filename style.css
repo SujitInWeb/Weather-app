@@ -30,7 +30,7 @@ html,body{
 .image{
     margin-left: 2vw;
     border: 1px solid #F1F1F1;
-
+    border-radius: 5px;
 }
 .info-container .image{
     background-color: #F1F1F1;
