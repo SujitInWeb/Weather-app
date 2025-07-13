@@ -9,12 +9,12 @@ html,body{
     width: 100%;  
 }
 .container{
-    background-color: hsla(240, 100%, 50%, 0.747);
     height: 100%;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 .info-container{
     background-color: hsla(113, 100%, 50%, 0.514);
@@ -22,4 +22,5 @@ html,body{
     width: 40%;
     border-radius: 4px;
     box-shadow: 5px 5px 20px;
+    z-index: 10;
 }
