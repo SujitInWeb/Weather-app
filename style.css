@@ -9,18 +9,42 @@ html,body{
     width: 100%;  
 }
 .container{
+    background-color: #4E6969;
     height: 100%;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
+}
+.container img{
+     width: 100%;
+}
+.content,image{
+    height: 100%;
+    width: 50% ;
+}
+.content{
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
+}
+.image{
+    margin-left: 2vw;
+    border: 1px solid #F1F1F1;
+
+}
+.info-container .image{
+    background-color: #F1F1F1;
+    object-fit: contain;
 }
 .info-container{
-    background-color: hsla(113, 100%, 50%, 0.514);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #7F9BA6;
     height: 80%;
-    width: 40%;
-    border-radius: 4px;
+    width: 80%;
+    border-radius: 7px;
     box-shadow: 5px 5px 20px;
     z-index: 10;
+    padding: 4vw;
 }
