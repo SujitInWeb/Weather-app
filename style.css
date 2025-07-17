@@ -20,11 +20,11 @@ html,body{
 .container img{
      width: 100%;
 }
-.content,image{
+.weather-form ,image{
     height: 100%;
     width: 50% ;
 }
-.content{
+.weather-form{
     border: 1px solid #F1F1F1;
     border-radius: 5px;
 }
