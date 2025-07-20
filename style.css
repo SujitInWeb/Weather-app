@@ -20,11 +20,13 @@ html,body{
 .container img{
      width: 100%;
 }
-.weather-form ,image{
+.weather-form {
     height: 100%;
     width: 50% ;
-}
-.weather-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border: 1px solid #F1F1F1;
     border-radius: 5px;
 }
@@ -35,7 +37,10 @@ html,body{
 }
 .info-container .image{
     background-color: #F1F1F1;
+
     object-fit: contain;
+    height: 100%;
+    width: 50% ;
 }
 .info-container{
     position: absolute;
