@@ -22,13 +22,28 @@ html,body{
 }
 .weather-form {
     height: 100%;
-    width: 50% ;
+    width: 30% ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 1px solid #F1F1F1;
     border-radius: 5px;
+}
+.weather-form button{
+    height: 30px;
+    width: 150px;
+    border: #4E6969;
+    background-color: #4E6969;
+    color: #F1F1F1;
+    border-radius: 4px;
+    margin: 1vw;
+}
+.weather-form input{
+    height: 30px ;
+    width: 150px ;
+    border: none;
+    padding: 1vw;
 }
 .image{
     margin-left: 2vw;
@@ -40,7 +55,7 @@ html,body{
 
     object-fit: contain;
     height: 100%;
-    width: 50% ;
+    width: 70% ;
 }
 .info-container{
     position: absolute;
