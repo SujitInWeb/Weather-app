@@ -1,0 +1,1 @@
+const weather = document.getElementById("container")
