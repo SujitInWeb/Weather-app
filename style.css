@@ -99,6 +99,7 @@ html,body{
     margin-right: 5px;
     color: #F1F1F1;
     border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 30%);
 
 }
 .Emoji{
@@ -114,7 +115,8 @@ html,body{
 .card-img{
     margin: 10px;
     border-radius: 10px;
-    background: url(images/sunny.jpg) center/cover no-repeat;
+    background: url(images/sunnny.jpg) center/cover no-repeat;
+    background-color: hsl(0, 0%, 5%);
 }
 .Emoji{
     margin-left:5px;
@@ -125,6 +127,7 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
     align-items: center;
     
 }
