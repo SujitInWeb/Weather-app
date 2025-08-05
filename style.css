@@ -7,18 +7,17 @@
 html,body{
     height :100%;
     width: 100%;  
+    background: #000;
 }
 .container{
-    background-color: #4E6969;
+    background: url(images/bg.jpg) center/cover no-repeat;
+    /* background-color: #4E6969; */
     height: 100%;
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
-.container img{
-     width: 100%;
 }
 .weather-form {
     height: 100%;
@@ -27,31 +26,35 @@ html,body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #F1F1F1;
     border-radius: 5px;
 }
 .weather-form button{
-    height: 30px;
-    width: 150px;
+    height: 50px;
+    width: 250px;
     border: #4E6969;
-    background-color: #4E6969;
+    background-color: #2B2B2B;
     color: #F1F1F1;
     border-radius: 4px;
     margin: 1vw;
+    font-size: 1em;
+    cursor: pointer;
 }
 .weather-form input{
-    height: 30px ;
-    width: 150px ;
+    height: 50px;
+    width: 250px;
+    font-size: 1.2em;
     border: none;
     padding: 1vw;
+    outline: none;
 }
-.image{
+.card{
     margin-left: 2vw;
-    border: 1px solid #F1F1F1;
     border-radius: 5px;
 }
-.info-container .image{
-    background-color: #F1F1F1;
+.info-container{
+    border: 1px solid hsl(0, 0%, 30%);
+}
+.info-container .card{
 
     object-fit: contain;
     height: 100%;
@@ -61,11 +64,67 @@ html,body{
     position: absolute;
     display: flex;
     justify-content: center;
-    background-color: #7F9BA6;
+    backdrop-filter: blur(10px);
     height: 80%;
     width: 80%;
     border-radius: 7px;
     box-shadow: 5px 5px 20px;
     z-index: 10;
     padding: 4vw;
+}
+.card-info , .card-img{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.card-img{
+    justify-content: center;
+    background-color: hsl(0, 0%, 5%);
+}
+.card-info{
+    justify-content: space-between;
+}
+.card-content , .Emoji{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: #F1F1F1;
+    border-radius: 10px;
+
+}
+.Emoji{
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 50%);
+    
+
+}
+.card-img{
+    margin: 10px;
+    border-radius: 10px;
+    background: url(images/sunny.jpg) center/cover no-repeat;
+}
+.Emoji{
+    margin-left:5px;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
