@@ -96,7 +96,8 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 2px;
     margin-right: 5px;
     color: #F1F1F1;
     border-radius: 20px;
@@ -118,8 +119,15 @@ html,body{
 .card-img{
     margin: 10px;
     border-radius: 10px;
-    background: url(images/sunnny.jpg) center/cover no-repeat;
     background-color: hsl(0, 0%, 5%);
+}
+.card-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: center;
+    object-fit: cover;
+    display: none;
 }
 .Emoji{
     margin-left:5px;
@@ -133,4 +141,14 @@ html,body{
     padding: 20px;
     align-items: center;
     
+}
+.cityDisplay,.tempDisplay{
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+.humiditydisplay{
+    font-weight: bold;
+}
+.descDisplay{
+    font-weight: bold;
 }
