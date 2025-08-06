@@ -34,13 +34,14 @@ html,body{
     border: #4E6969;
     background-color: #2B2B2B;
     color: #F1F1F1;
-    border-radius: 4px;
+    border-radius: 10px;
     margin: 1vw;
     font-size: 1em;
     cursor: pointer;
 }
 .weather-form input{
     height: 50px;
+    border-radius: 10px;
     width: 250px;
     font-size: 1.2em;
     border: none;
@@ -95,12 +96,14 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 5px;
     color: #F1F1F1;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     border: 1px solid hsl(0, 0%, 30%);
-
+    padding: 1vw;
 }
 .Emoji{
     font-size: 6rem;
@@ -120,7 +123,7 @@ html,body{
 }
 .Emoji{
     margin-left:5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .card{
