@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**A beautiful weather application with glassmorphism design**
+**A weather application with glassmorphism design**
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
