@@ -66,7 +66,23 @@ function hideAllImg(){
     cloudy.style.display= "none";
 }
 function showWeatherImage(weatherid){
-    
+    switch(true){
+        case (weatherid >= 200 && weatherid <600):
+            rainny.style.display = "block";
+            break;
+        case (weatherid >= 600 && weatherid <700):
+            winter.style.display = "block";
+            break;
+        case (weatherid >= 700 && weatherid < 800):
+        case (weatherid >= 801 && weatherid < 810 ):
+            cloudy.style.display = "block";
+            break;
+        case (weatherid === 800):
+            sunnny.style.display = "block";
+            break;
+        default:
+            cloudy.style.display = "block";
+    }
 }
 
 function getweatherEmoji(weatherid){
