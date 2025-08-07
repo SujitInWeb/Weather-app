@@ -73,7 +73,6 @@ weather-app/
 - Vanilla JavaScript (ES6+)
 - CSS3 with glassmorphism effects
 - OpenWeatherMap API
-- Mobile-first responsive design
 
 **API Integration:**
 ```javascript
