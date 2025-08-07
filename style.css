@@ -113,8 +113,6 @@ html,body{
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 50%);
-    
-
 }
 .card-img{
     margin: 10px;
@@ -153,6 +151,7 @@ html,body{
     font-weight: bold;
 }
 .errorDisplay{
+    display: flex;
     color: #F1F1F1;
     font-size: 20px;
 }

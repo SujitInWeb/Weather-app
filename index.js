@@ -1,17 +1,30 @@
-const weatherForm = document.querySelector(".weatherform");
+const weatherForm = document.querySelector(".weather-form");
 const cityInput = document.querySelector(".cityInput");
-const card = document . querySelector("card-content");
+const card = document . querySelector(".card-content");
 const cityDisplay = document.querySelector(".cityDisplay");
 const descDisplay = document.querySelector(".descDisplay");
 const weatherEmoji = document.querySelector(".weatherEmoji");
-const apiKey = c334699d67487efa86e141b4f7a29e97;
+const tempDisplay = document.querySelector(".tempDisplay"); 
+const humidityDisplay = document.querySelector(".humiditydisplay"); 
+const cloudy = document.getElementById("cloudy");
+const sunnny = document.getElementById("sunnny");
+const winter = document.getElementById("winter");
+const rainny = document.getElementById("rainny");
+const apiKey = "c334699d67487efa86e141b4f7a29e97";
 
-weatherForm.addEventListener("sumit" , event =>{
+weatherForm.addEventListener("submit" , async event =>{
     event.preventDefault();
 
     const city = cityInput.value;
     if(city){
-
+        try{
+            const getWeatherdata = await getWeatherData(city);
+            displayWeatherInfo (getWeatherdata);
+        }
+        catch(error){
+            console.error(error);
+            displayError(error);
+        }
     }
     else{
         displayError("please enter a city");
@@ -19,11 +32,38 @@ weatherForm.addEventListener("sumit" , event =>{
 });
 
 async function getWeatherData(city){
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
+    const response = await fetch(apiUrl);
+
+    if(!response.ok){
+        throw new Error ("could not fetch weather data");
+    }
+    return await response.json();
 }
 
 function displayWeatherInfo(data){
 
+    const { name: city ,
+         main :{temp , humidity} 
+         ,weather : [{description , id}]} = data;
+
+    cityDisplay.textContent= city;
+    tempDisplay.textContent=`${Math.round(temp)}°C`;
+    humidityDisplay.textContent= `humidity ${humidity}%`;
+    descDisplay.textContent = description;
+    weatherEmoji.textContent= getweatherEmoji(id);
+
+    hideAllImg();
+    showWeatherImage(id);
+
+    card.style.display = "flex";
+}
+function hideAllImg(){
+    sunnny.style.display= "none";
+    winter.style.display= "none";
+    rainny.style.display= "none";
+    cloudy.style.display= "none";
 }
 
 function getweatherEmoji(weatherid){
@@ -34,7 +74,12 @@ function displayError(message){
     errorDisplay.textContent= message;
     errorDisplay.classList.add("errorDisplay");
 
-    card.textContent ="";
-    card.style.display = "flex";
-    card.appendChild(errorDisplay);
+    const existingError = document.querySelector(".errorDisplay");
+    if(existingError) {
+        existingError.remove();
+    }
+
+    const cardContent = document.querySelector(".card-content");
+    
+    cardContent.appendChild(errorDisplay);
 }
