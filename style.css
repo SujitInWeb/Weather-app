@@ -10,7 +10,7 @@ html,body{
     background: #000;
 }
 .container{
-    background: url(images/bg.jpg) center/cover no-repeat;
+    background: url(./images/bg.jfif) center/cover no-repeat;
     /* background-color: #4E6969; */
     height: 100%;
     width: auto;
