@@ -104,7 +104,7 @@ html,body{
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     border: 1px solid hsl(0, 0%, 30%);
-    padding: 1vw;
+    padding: 3vw;
 }
 .weatherEmoji{
     font-size: 6rem;
