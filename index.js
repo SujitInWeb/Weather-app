@@ -84,7 +84,7 @@ function showWeatherImage(weatherid){
             cloudy.style.display = "block";
     }
 }
-
+//funtion for switching emojis of the weather
 function getweatherEmoji(weatherid){
 
     switch(true){
